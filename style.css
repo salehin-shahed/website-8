@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+
+.header {
+    z-index: 1;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu ul {
+    margin: 0 100px 0 250px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 30px;
+    padding: 50px 0;
+}
+
+.menu ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.menu ul li a:hover {
+    color: #ef664d;
+    transition: .4s;
+}
+
+
+/* Banner Section */
+
+.banner {
+    background-image: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding: 300px 0 230px 0;
+    margin-top: -130px;
+}
+
+.banner-text h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-right: 50px;
+    position: relative;
+}
+
+.banner-text h2::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    color: #ef664d;
+    font-size: 35px;
+    position: absolute;
+    font-style: normal;
+    margin: -5px -35px;
+}
+
+.banner-text h2::after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    color: #ef664d;
+    font-size: 35px;
+    position: absolute;
+    font-style: normal;
+    margin: -5px 5px;
+}
+
+
+/* About Section */
+
+.about {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.about-text .picture {
+    display: inline-block;
+}
+
+.about-text .paragraph {
+    display: inline-block;
+    width: 38%;
+}
+
+.about .picture img {
+    display: block;
+    width: 200px;
+    margin-right: 90px;
+    border: 2px solid #ff654b;
+    box-shadow: 0 0 15px 0 #000;
+}
+
+.about-title h3 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.about-text p {
+    font-size: 16px;
+    text-align: left;
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #5a5757;
+    line-height: 1.4em;
+}
+
+
+/* Service Section */
+
+.service {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: #2e3e4e;
+    padding: 100px 0;
+}
+
+.service .service-title h2 {
+    color: #ff684d;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.service-item .items {
+    display: inline-block;
+    margin: 0 60px 0 80px;
+}
+
+.service-item .icon span {
+    background: #ff684d;
+    color: #fff;
+    font-size: 17px;
+    padding: 13px;
+    border-radius: 0 23px 0 23px;
+}
+
+.service-text h2 {
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 30px 0 15px 0;
+    font-style: italic;
+}
+
+.service-list {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 2.5em;
+}
+
+.service-list p::before {
+    content: "\f560";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #ef664d;
+    margin-right: 10px;
+}
+
+.service-button {
+    margin-top: 25px;
+}
+
+.service-button a {
+    text-decoration: none;
+    background: #ff684d;
+    color: #fff;
+    font-size: 17px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 #000;
+    position: relative;
+    z-index: 1;
+}
+
+.service-button a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff000;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    transition: .4s;
+    z-index: -1;
+}
+
+.service-button .button-2 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff000;
+    width: 100%;
+    height: 0;
+    border-radius: 5px;
+    transition: .4s;
+    z-index: -1;
+}
+
+.service-button .button-3 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff000;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    transition: .4s;
+    z-index: -1;
+}
+
+.service-button a:hover {
+    color: #506873;
+}
+
+.service-button a:hover::before {
+    width: 100%;
+}
+
+.service-button .button-2 a:hover::before {
+    height: 100%;
+}
+
+
+/* Contact Form */
+
+.contact {
+    text-align: center;
+}
+
+.contact-title h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 50px 0 30px 0;
+    font-weight: 100;
+}
+
+.contact-form {
+    width: 500px;
+    margin: auto;
+}
+
+.contact-form .form {
+    width: 500px;
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin: 25px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff684d;
+}
+
+.submit-button {
+    background: #ff684d;
+    width: 300px;
+    margin: 20px auto 50px;
+    padding: 10px 0;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 0 #000;
+    position: relative;
+    z-index: 1;
+}
+
+.submit-button .submit-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.submit-button::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    border-radius: 7px 0 0 7px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #792309;
+    z-index: -1;
+    transition: .4s;
+}
+
+.submit-button::after {
+    content: "";
+    width: 0;
+    height: 100%;
+    border-radius: 0 7px 7px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #512719;
+    z-index: -1;
+    transition: .4s;
+}
+
+.submit-button:hover::before {
+    width: 50%;
+}
+
+.submit-button:hover::after {
+    width: 50%;
+}
+
+
+/* Footer Section */
+
+.footer {
+    background: #2e3e4e;
+    text-align: center;
+    color: #f3f3f3;
+    padding: 35px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .orange {
+    color: #dd594d;
+}
